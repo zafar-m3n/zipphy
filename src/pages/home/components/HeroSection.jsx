@@ -50,7 +50,10 @@ const HeroSection = () => {
           <div className="max-w-2xl p-8 animation-fadeInUp" style={{ animation: "fadeInUp 1s ease-out" }}>
             <h1 className="text-2xl md:text-5xl font-bold mb-4">{slides[currentIndex].title}</h1>
             <p className="text-sm md:text-lg mb-6">{slides[currentIndex].description}</p>
-            <button className="px-3 md:px-6 p-1.5 md:py-3 bg-accent text-white rounded-sm md:rounded-lg text-sm md:text-lg hover:bg-opacity-80 transition">
+            <button
+              className="px-3 md:px-6 p-1.5 md:py-3 bg-accent text-white rounded-sm md:rounded-lg text-sm md:text-lg hover:bg-opacity-80 transition"
+              onClick={() => window.open("https://app.zipphy.com/login", "_blank")}
+            >
               {slides[currentIndex].button}
             </button>
           </div>
