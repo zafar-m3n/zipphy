@@ -20,57 +20,79 @@ const Header = () => {
   const handleMouseLeave = () => {
     submenuTimeout.current = setTimeout(() => {
       setOpenDesktopMenu(null);
-    }, 300); // Delay to allow user interaction
+    }, 300);
   };
 
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
   return (
     <header className="bg-primary text-background shadow-md">
-      <div className="container mx-auto flex justify-between items-center py-4 px-4">
-        <a href="/">
-          <img src={logo} alt="Zipphy Logo" className="h-16" />
-        </a>
-        <div className="md:hidden">
-          <button className="text-background focus:outline-none" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-            <Icon icon="heroicons:bars-3" width={24} className="border border-gray-100 rounded p-2 h-12 w-12" />
-          </button>
+      <div className="container mx-auto flex justify-between items-center px-4">
+        <div className="flex items-center">
+          <a href="/">
+            <img src={logo} alt="Zipphy Logo" className="h-20" />
+          </a>
+          <nav className="hidden md:flex space-x-6">
+            {navMenu.map((item, index) => (
+              <div
+                key={index}
+                className="relative"
+                onMouseEnter={() => handleMouseEnter(index)}
+                onMouseLeave={handleMouseLeave}
+              >
+                <a href={item.link || "#"} className="hover:text-accent transition-colors flex items-center space-x-1">
+                  <span>{item.title}</span>
+                  {item.children && <Icon icon="heroicons:chevron-down" width={16} />}
+                </a>
+                {item.children && (
+                  <div
+                    className={`absolute left-0 top-full flex flex-col bg-secondary text-background shadow-lg mt-2 w-60 rounded-lg transition-transform transition-opacity duration-300 ${
+                      openDesktopMenu === index
+                        ? "opacity-100 translate-y-0"
+                        : "opacity-0 -translate-y-2 pointer-events-none"
+                    }`}
+                  >
+                    {item.children.map((child, childIndex) => (
+                      <a key={childIndex} href={child.link} className="px-4 py-2 hover:bg-accent hover:text-primary">
+                        {child.title}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </nav>
         </div>
-
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-6">
-          {navMenu.map((item, index) => (
-            <div
-              key={index}
-              className="relative"
-              onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}
-            >
-              <a href={item.link || "#"} className="hover:text-accent transition-colors flex items-center space-x-1">
-                <span>{item.title}</span>
-                {item.children && <Icon icon="heroicons:chevron-down" width={16} />}
+        <div className="flex items-center space-x-6">
+          <div className="md:flex items-center md:space-x-6">
+            {!isMobileMenuOpen && (
+              <a
+                href="https://app.zipphy.com/login"
+                className="bg-accent text-primary px-4 py-2 rounded-full hover:bg-primary hover:text-background transition-colors"
+              >
+                Login
               </a>
-              {item.children && (
-                <div
-                  className={`absolute left-0 top-full flex flex-col bg-secondary text-background shadow-lg mt-2 w-60 rounded-lg transition-transform transition-opacity duration-300 ${
-                    openDesktopMenu === index
-                      ? "opacity-100 translate-y-0"
-                      : "opacity-0 -translate-y-2 pointer-events-none"
-                  }`}
-                >
-                  {item.children.map((child, childIndex) => (
-                    <a key={childIndex} href={child.link} className="px-4 py-2 hover:bg-accent hover:text-primary">
-                      {child.title}
-                    </a>
-                  ))}
-                </div>
-              )}
-            </div>
-          ))}
-        </nav>
+            )}
+            <a
+              href="https://app.zipphy.com/signup"
+              className="hidden md:block bg-accent text-primary px-4 py-2 rounded-full hover:bg-primary hover:text-background transition-colors"
+            >
+              Sign Up
+            </a>
+          </div>
+          <div className="md:hidden">
+            {!isMobileMenuOpen && (
+              <button
+                className="text-background focus:outline-none"
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              >
+                <Icon icon="heroicons:bars-3" width={24} className="border border-gray-100 rounded p-2 h-12 w-12" />
+              </button>
+            )}
+          </div>
+        </div>
       </div>
 
-      {/* Mobile Navigation */}
       <div
         className={`fixed inset-0 z-50 flex transform transition-transform duration-300 ${
           isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
