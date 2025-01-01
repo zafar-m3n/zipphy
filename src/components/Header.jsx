@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { navMenu } from "@/data/data";
 import Icon from "@/components/ui/Icon";
 import logo from "@/assets/logo-white.png";
@@ -6,8 +6,22 @@ import logoDark from "@/assets/logo-dark.png";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [openDesktopMenu, setOpenDesktopMenu] = useState(null); // Tracks open submenu in desktop view
-  const [openMobileMenu, setOpenMobileMenu] = useState(null); // Tracks open submenu in mobile view
+  const [openDesktopMenu, setOpenDesktopMenu] = useState(null);
+  const [openMobileMenu, setOpenMobileMenu] = useState(null);
+
+  // Ref to track submenu close timeout
+  const submenuTimeout = useRef(null);
+
+  const handleMouseEnter = (index) => {
+    clearTimeout(submenuTimeout.current); // Clear any existing timeout
+    setOpenDesktopMenu(index);
+  };
+
+  const handleMouseLeave = () => {
+    submenuTimeout.current = setTimeout(() => {
+      setOpenDesktopMenu(null);
+    }, 300); // Delay to allow user interaction
+  };
 
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
@@ -29,8 +43,8 @@ const Header = () => {
             <div
               key={index}
               className="relative"
-              onMouseEnter={() => setOpenDesktopMenu(index)}
-              onMouseLeave={() => setOpenDesktopMenu(null)}
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
             >
               <a href={item.link || "#"} className="hover:text-accent transition-colors flex items-center space-x-1">
                 <span>{item.title}</span>
@@ -49,8 +63,7 @@ const Header = () => {
           ))}
         </nav>
       </div>
-
-      {/* Mobile Navigation */}
+      
       {/* Mobile Navigation */}
       <div
         className={`fixed inset-0 z-50 flex transform transition-transform duration-300 ${
