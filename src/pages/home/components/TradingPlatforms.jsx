@@ -13,7 +13,7 @@ const TradingPlatforms = () => {
         {/* Content Section */}
         <div className="lg:w-1/2 space-y-6">
           <h2 className="text-4xl font-bold text-primary">Powerful Platforms for Every Trader</h2>
-          <p className="text-lg text-secondary">
+          <p className="text-lg text-secondary text-justify">
             At Zipphy, we empower traders with advanced, award-winning tools that transform the trading experience. With
             cutting-edge features like real-time market data, customizable interfaces, and powerful charting tools, our
             platforms are designed to give traders a competitive edge in today’s dynamic markets.
@@ -26,7 +26,7 @@ const TradingPlatforms = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-primary">Multi-Award-Winning Platforms</h3>
-                <p className="text-secondary">
+                <p className="text-secondary text-justify">
                   Trusted for over 15 years, our MT4 and MT5 platforms have won numerous awards, solidifying their
                   position as the preferred choice for traders worldwide.
                 </p>
@@ -40,7 +40,7 @@ const TradingPlatforms = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-primary">Fast and User-Friendly</h3>
-                <p className="text-secondary">
+                <p className="text-secondary text-justify">
                   Our platforms are tailored to all trading levels, offering lightning-fast execution and a reliable
                   interface to navigate a broad range of financial assets effortlessly.
                 </p>
@@ -53,7 +53,7 @@ const TradingPlatforms = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-primary">Accessible Anytime, Anywhere</h3>
-                <p className="text-secondary">
+                <p className="text-secondary text-justify">
                   Trade seamlessly on the go with apps available for Android and iOS, or enjoy the full desktop
                   experience on Windows and Mac OS.
                 </p>

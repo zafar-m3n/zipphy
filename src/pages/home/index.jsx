@@ -4,6 +4,8 @@ import Welcome from "./components/Welcome";
 import TradingOpportunities from "./components/TradingOpportunities";
 import InvestingSection from "./components/InvestingSection";
 import TradingPlatforms from "./components/TradingPlatforms";
+import MarketCategories from "./components/MarketCategories";
+import ClientSlider from "./components/ClientsSlider";
 
 const HomePage = () => {
   return (
@@ -11,12 +13,12 @@ const HomePage = () => {
       <HeroSection />
       <div className="container mx-auto">
         <Welcome />
-      </div>
-      <div className="bg-gradient-to-b from-accent to-primary">
+        <TradingPlatforms />
         <TradingOpportunities />
+        <ClientSlider />
+        <InvestingSection />
+        <MarketCategories />
       </div>
-      <InvestingSection />
-      <TradingPlatforms />
     </div>
   );
 };

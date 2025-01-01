@@ -28,10 +28,15 @@ export default {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-10px)" },
         },
+        slide: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
       },
       animation: {
         fadeInUp: "fadeInUp 1s ease-out",
         float: "float 4s ease-in-out infinite",
+        slider: "slide 24s linear infinite",
       },
     },
   },

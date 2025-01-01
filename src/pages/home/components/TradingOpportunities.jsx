@@ -2,9 +2,8 @@ import React from "react";
 
 const TradingOpportunities = () => {
   return (
-    <section className="relative text-background py-16 px-8 lg:py-24 lg:px-16">
-      <div className="container mx-auto flex flex-col lg:flex-row items-center">
-        {/* Text Content */}
+    <section className="relative text-secondary p-8 lg:p-16">
+      <div className="flex flex-col lg:flex-row items-center">
         <div className="lg:w-1/2 space-y-6">
           <h2 className="text-4xl font-bold text-primary">One Broker, Countless Trading Opportunities</h2>
           <p className="text-lg text-justify">
