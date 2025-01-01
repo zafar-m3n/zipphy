@@ -38,7 +38,7 @@ const MarketCategories = () => {
     <section className="p-8 lg:p-16">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary">Explore The Markets</h2>
+          <h2 className="text-2xl md:text-4xl font-bold text-primary">Explore The Markets</h2>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
