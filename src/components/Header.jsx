@@ -50,8 +50,14 @@ const Header = () => {
                 <span>{item.title}</span>
                 {item.children && <Icon icon="heroicons:chevron-down" width={16} />}
               </a>
-              {item.children && openDesktopMenu === index && (
-                <div className="absolute left-0 top-full flex flex-col bg-secondary text-background shadow-lg mt-2 w-60 rounded-lg">
+              {item.children && (
+                <div
+                  className={`absolute left-0 top-full flex flex-col bg-secondary text-background shadow-lg mt-2 w-60 rounded-lg transition-transform transition-opacity duration-300 ${
+                    openDesktopMenu === index
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 -translate-y-2 pointer-events-none"
+                  }`}
+                >
                   {item.children.map((child, childIndex) => (
                     <a key={childIndex} href={child.link} className="px-4 py-2 hover:bg-accent hover:text-primary">
                       {child.title}
@@ -63,7 +69,7 @@ const Header = () => {
           ))}
         </nav>
       </div>
-      
+
       {/* Mobile Navigation */}
       <div
         className={`fixed inset-0 z-50 flex transform transition-transform duration-300 ${
