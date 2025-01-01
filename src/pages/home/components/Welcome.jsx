@@ -4,7 +4,7 @@ const Welcome = () => {
   return (
     <section className="flex flex-col lg:flex-row items-center justify-between p-8 lg:p-16">
       <div className="lg:w-1/2 text-center lg:text-left space-y-6">
-        <h2 className="text-4xl font-bold text-background">Empowering Global Traders with Zipphy</h2>
+        <h2 className="text-4xl font-bold text-secondary">Empowering Global Traders with Zipphy</h2>
         <p className="text-lg text-justify">
           Step into the world of limitless financial possibilities with Zipphy. Designed for both beginners and seasoned
           experts, our platform delivers an unparalleled trading experience. Access diverse markets, from stocks to
