@@ -1,7 +1,7 @@
 export const navMenu = [
   {
     title: "Home",
-    link: "/home",
+    link: "/",
   },
   {
     title: "Investing",
