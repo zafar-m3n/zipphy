@@ -22,14 +22,14 @@ const Accordion = ({ items, allowMultiple = false }) => {
         const isActive = allowMultiple ? activeIndices.includes(index) : activeIndices === index;
 
         return (
-          <div key={index} className="border-b last:border-none">
+          <div key={index} className="border-b last:border-none ">
             <button
-              className="w-full flex justify-between items-center p-4 text-left bg-gray-100 hover:bg-gray-200 focus:outline-none"
+              className="w-full flex justify-between items-center p-4 text-left bg-gradient-to-r from-accent to-secondary focus:outline-none"
               onClick={() => toggleAccordion(index)}
             >
               <span className="font-medium text-gray-800">{item.title}</span>
-              <span className={`transition-transform duration-300 ${isActive ? "rotate-180" : ""}`}>
-                <Icon icon="heroicons:chevron-down" className="h-5 w-5 text-gray-600" />
+              <span className={`transition-transform duration-300 ${isActive ? "" : "-rotate-90"}`}>
+                <Icon icon="heroicons:chevron-down" className="h-8 w-8 p-2 rounded text-primary bg-background" />
               </span>
             </button>
             <div
@@ -37,7 +37,7 @@ const Accordion = ({ items, allowMultiple = false }) => {
                 isActive ? "max-h-screen p-4" : "max-h-0"
               } bg-white text-gray-700`}
             >
-              {isActive && <div>{item.content}</div>}
+              {isActive && <div className="text-justify">{item.content}</div>}
             </div>
           </div>
         );
