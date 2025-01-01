@@ -123,7 +123,9 @@ const Header = () => {
             </div>
           ))}
         </div>
-        <div className="flex-1 bg-black opacity-50" onClick={closeMobileMenu}></div>
+        <div className="flex-1 bg-black opacity-50 relative" onClick={closeMobileMenu}>
+          <Icon icon="heroicons:x-mark" width={24} className="text-white font-bold absolute right-4 top-4" />
+        </div>
       </div>
     </header>
   );
