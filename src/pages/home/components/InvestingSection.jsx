@@ -7,18 +7,18 @@ const InvestingSection = () => {
       <div className="container mx-auto flex flex-col lg:flex-row items-center space-x-6">
         {/* Text Section */}
         <div className="lg:w-1/2 space-y-6 mb-12 lg:mb-0">
-          <h2 className="text-4xl font-bold text-primary">Simplify Your Investments with Zipphy</h2>
-          <p className="text-lg text-secondary text-justify">
+          <h2 className="text-2xl md:text-4xl font-bold text-primary">Simplify Your Investments with Zipphy</h2>
+          <p className="text-sm md:text-lg text-secondary text-justify">
             Maximize your financial potential with Zipphy. Our platform empowers you to manage all your investments in
             one place, saving you time and effort. From real-time tracking to low fees, we ensure every step of your
             investment journey is seamless and rewarding.
           </p>
-          <p className="text-lg text-secondary text-justify">
+          <p className="text-sm md:text-lg text-secondary text-justify">
             With Zipphy, enjoy a unified experience tailored to traders and investors of all levels. Whether it's
             managing portfolios, accessing detailed analytics, or strategizing for the future, Zipphy is your all-in-one
             solution for comprehensive financial management.
           </p>
-          <button className="px-6 py-3 bg-accent text-primary rounded-lg text-lg hover:bg-opacity-80 transition">
+          <button className="px-3 py-1.5 md:px-6 md:py-3 bg-accent text-primary rounded-sm md:rounded-lg text-sm md:text-lg hover:bg-opacity-80 transition">
             Register Now
           </button>
         </div>
@@ -45,7 +45,7 @@ const InvestingSection = () => {
               predictable costs.
             </p>
           </div>
-          <div className="bg-white rounded-lg shadow-lg p-6 text-center space-y-4 col-span-2 md:col-span-1">
+          <div className="bg-white rounded-lg shadow-lg p-6 text-center space-y-4 col-span-1">
             <div className="flex items-center justify-center w-12 h-12 mx-auto bg-secondary text-accent rounded-full">
               <Icon icon="fluent:access-time-24-filled" width={28} />
             </div>

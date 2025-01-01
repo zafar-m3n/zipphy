@@ -5,8 +5,8 @@ const TradingOpportunities = () => {
     <section className="relative text-secondary p-8 lg:p-16">
       <div className="flex flex-col lg:flex-row items-center">
         <div className="lg:w-1/2 space-y-6">
-          <h2 className="text-4xl font-bold text-primary">One Broker, Countless Trading Opportunities</h2>
-          <p className="text-lg text-justify">
+          <h2 className="text-2xl md:text-4xl font-bold text-primary">One Broker, Countless Trading Opportunities</h2>
+          <p className="text-sm md:text-lg text-justify">
             With one broker at your side, a myriad of trading opportunities unfold. Dive into a world where diverse
             markets converge, offering endless possibilities for those seeking financial growth. From stocks and
             currencies to commodities and cryptocurrencies, our platform opens doors to a wealth of trading options.
@@ -27,7 +27,7 @@ const TradingOpportunities = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
               </span>
-              <p className="text-justify">
+              <p className="text-justify text-sm md:text-base">
                 With our brokerage, embrace a world where myriad trading opportunities await. From traditional stocks to
                 cutting-edge cryptocurrencies and everything in between.
               </p>
@@ -45,7 +45,7 @@ const TradingOpportunities = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
               </span>
-              <p className="text-justify">
+              <p className="text-justify text-sm md:text-base">
                 We offer a user-friendly platform designed to cater to traders of all levels. Navigate through various
                 markets effortlessly, leveraging our expertise.
               </p>
