@@ -4,8 +4,8 @@ import logo from "@/assets/logo-white.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-background pt-8">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-secondary">
+    <footer className="bg-primary text-background p-8">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 md:gap-8 pb-8 border-b border-secondary">
         <div className="flex flex-col items-start">
           <img src={logo} alt="Zipphy Logo" className="w-full" />
           <div className="flex space-x-4 ms-12">
@@ -14,7 +14,7 @@ const Footer = () => {
             <Icon icon="mdi:linkedin" width={36} className="text-accent hover:scale-110 transition-transform" />
           </div>
         </div>
-        <div>
+        <div className="text-gray-400">
           <h3 className="text-lg font-bold text-accent mb-6 underline underline-offset-8">Contact Us</h3>
           <div className="flex items-center mb-6">
             <Icon icon="heroicons:envelope" className="bg-accent w-11 h-11 p-2 rounded-full" />
@@ -43,8 +43,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        <div>
+        <div className="text-gray-400">
           <h3 className="text-lg font-bold text-accent mb-6 underline underline-offset-8">Useful Links</h3>
           <ul className="space-y-2">
             <li>
@@ -69,6 +68,17 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+        <p className="col-span-3 text-justify text-gray-400">
+          <span className="font-bold">Risk Warning: </span>
+          CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. 82.12% of
+          retail investor accounts lose money when trading CFDs with this provider. You should consider whether you
+          understand how CFDs work and whether you can afford to take the high risk of losing your money. You don't own
+          or have rights in the underlying assets. Past performance is not a reliable indicator of future performance
+          and tax laws are subject to change. The information on this website is general in nature and doesn't take into
+          account your or your client's personal objectives, financial circumstances, or needs. Please read our RDN and
+          other legal documents and ensure you fully understand the risks before you make any trading decisions. We
+          encourage you to seek independent advice.
+        </p>
       </div>
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center py-4">
         <p>&copy; {new Date().getFullYear()} Zipphy.com. All Rights Reserved.</p>
