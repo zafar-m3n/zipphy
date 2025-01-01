@@ -1,7 +1,13 @@
 import React from "react";
+import HeroSection from "./components/HeroSection";
 
 const HomePage = () => {
-  return <div className="text-4xl">HomePage</div>;
+  return (
+    <div>
+      <HeroSection />
+      <div className="text-center text-4xl mt-12">Welcome to the HomePage!</div>
+    </div>
+  );
 };
 
 export default HomePage;

@@ -1,0 +1,63 @@
+import React, { useState, useEffect } from "react";
+
+const HeroSection = () => {
+  const slides = [
+    {
+      image: "/images/hero-1.png",
+      title: "Trade Smarter, Not Harder",
+      description: "Join millions of traders leveraging cutting-edge tools for maximum returns.",
+      button: "Start Trading",
+      alignment: "text-right justify-end",
+    },
+    {
+      image: "/images/hero-2.jpg",
+      title: "Analyze the Market with Precision",
+      description: "Stay ahead with real-time data and expert insights at your fingertips.",
+      button: "Learn More",
+      alignment: "text-left justify-start",
+    },
+    {
+      image: "/images/hero-3.jpg",
+      title: "Your Journey to Financial Freedom",
+      description: "Achieve your goals with a platform designed for traders of all levels.",
+      button: "Get Started",
+      alignment: "text-center justify-center",
+    },
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    }, 10000);
+
+    return () => clearInterval(interval);
+  }, [slides.length]);
+
+  return (
+    <section
+      className="relative h-screen flex flex-col justify-center text-white"
+      style={{
+        backgroundImage: `url(${slides[currentIndex].image})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        transition: "background-image 1s ease-in-out",
+      }}
+    >
+      <div className={`absolute inset-0 bg-black bg-opacity-50 flex items-center`}>
+        <div className={`container mx-auto flex items-center ${slides[currentIndex].alignment}`}>
+          <div className="max-w-2xl p-8 animation-fadeInUp" style={{ animation: "fadeInUp 1s ease-out" }}>
+            <h1 className="text-5xl font-bold mb-4">{slides[currentIndex].title}</h1>
+            <p className="text-lg mb-6">{slides[currentIndex].description}</p>
+            <button className="px-6 py-3 bg-accent text-white rounded-lg text-lg hover:bg-opacity-80 transition">
+              {slides[currentIndex].button}
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
