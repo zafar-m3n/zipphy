@@ -37,7 +37,7 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative h-screen flex flex-col justify-center text-white"
+      className="relative h-96 md:h-screen flex flex-col justify-center text-white"
       style={{
         backgroundImage: `url(${slides[currentIndex].image})`,
         backgroundSize: "cover",
@@ -48,9 +48,9 @@ const HeroSection = () => {
       <div className={`absolute inset-0 bg-black bg-opacity-50 flex items-center`}>
         <div className={`container mx-auto flex items-center ${slides[currentIndex].alignment}`}>
           <div className="max-w-2xl p-8 animation-fadeInUp" style={{ animation: "fadeInUp 1s ease-out" }}>
-            <h1 className="text-5xl font-bold mb-4">{slides[currentIndex].title}</h1>
-            <p className="text-lg mb-6">{slides[currentIndex].description}</p>
-            <button className="px-6 py-3 bg-accent text-white rounded-lg text-lg hover:bg-opacity-80 transition">
+            <h1 className="text-2xl md:text-5xl font-bold mb-4">{slides[currentIndex].title}</h1>
+            <p className="text-sm md:text-lg mb-6">{slides[currentIndex].description}</p>
+            <button className="px-3 md:px-6 p-1.5 md:py-3 bg-accent text-white rounded-sm md:rounded-lg text-sm md:text-lg hover:bg-opacity-80 transition">
               {slides[currentIndex].button}
             </button>
           </div>

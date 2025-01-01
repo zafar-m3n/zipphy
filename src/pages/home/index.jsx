@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <div>
       <HeroSection />
-      <div className="text-center text-4xl mt-12">Welcome to the HomePage!</div>
+      <div className="container mx-auto">Welcome to the HomePage!</div>
     </div>
   );
 };
