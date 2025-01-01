@@ -51,6 +51,7 @@ const Header = () => {
       </div>
 
       {/* Mobile Navigation */}
+      {/* Mobile Navigation */}
       <div
         className={`fixed inset-0 z-50 flex transform transition-transform duration-300 ${
           isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
@@ -59,6 +60,9 @@ const Header = () => {
         <div className="max-w-80 bg-white text-primary px-4 space-y-4">
           <div className="flex justify-between items-center">
             <img src={logoDark} alt="Zipphy Logo" className="w-60" />
+            <button className="text-background focus:outline-none" onClick={closeMobileMenu}>
+              <Icon icon="heroicons:x" width={24} className="border rounded p-2 h-12 w-12" />
+            </button>
           </div>
           {navMenu.map((item, index) => (
             <div key={index}>
@@ -78,17 +82,23 @@ const Header = () => {
                   </button>
                 )}
               </div>
-              {item.children && openMobileMenu === index && (
-                <div className="ml-6 mt-2 space-y-2">
-                  {item.children.map((child, childIndex) => (
-                    <a
-                      key={childIndex}
-                      href={child.link}
-                      className="block px-2 py-1 hover:bg-accent hover:text-primary"
-                    >
-                      {child.title}
-                    </a>
-                  ))}
+              {item.children && (
+                <div
+                  className={`transition-[max-height] duration-300 overflow-hidden ${
+                    openMobileMenu === index ? "max-h-96" : "max-h-0"
+                  }`}
+                >
+                  <div className="ml-6 mt-2 space-y-2">
+                    {item.children.map((child, childIndex) => (
+                      <a
+                        key={childIndex}
+                        href={child.link}
+                        className="block px-2 py-1 hover:bg-accent hover:text-primary"
+                      >
+                        {child.title}
+                      </a>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
