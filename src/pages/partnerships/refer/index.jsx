@@ -20,9 +20,9 @@ const ReferFriend = () => {
           </div>
           <div className="md:w-1/2">
             <img
-              src="https://via.placeholder.com/500x500"
+              src="/images/refer.png"
               alt="Refer a Friend"
-              className="w-full rounded-lg shadow-lg"
+              className="w-full rounded-lg animate-float"
             />
           </div>
         </div>

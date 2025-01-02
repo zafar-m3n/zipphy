@@ -4,27 +4,27 @@ const Markets = ({ currentMarket }) => {
   const markets = [
     {
       title: "Stocks",
-      image: "https://via.placeholder.com/200x200",
+      image: "/images/markets/1.png",
       link: "/markets/stocks",
     },
     {
       title: "Forex",
-      image: "https://via.placeholder.com/200x200",
+      image: "/images/markets/2.png",
       link: "/markets/forex",
     },
     {
       title: "Commodities",
-      image: "https://via.placeholder.com/200x200",
+      image: "/images/markets/3.png",
       link: "/markets/commodities",
     },
     {
       title: "Crypto",
-      image: "https://via.placeholder.com/200x200",
+      image: "/images/markets/4.png",
       link: "/markets/crypto",
     },
     {
       title: "Indices",
-      image: "https://via.placeholder.com/200x200",
+      image: "/images/markets/5.png",
       link: "/markets/indices",
     },
   ];
@@ -43,6 +43,7 @@ const Markets = ({ currentMarket }) => {
             className={`flex flex-col items-center text-center space-y-4 rounded-lg shadow-lg ${
               market.title === currentMarket ? "bg-slate-100" : ""
             }`}
+            onClick={() => window.location.replace(market.link)}
           >
             <img src={market.image} alt={market.title} className="w-24 h-24 object-contain" />
             <h3 className="text-xl font-semibold text-primary">{market.title}</h3>

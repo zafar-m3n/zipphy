@@ -17,14 +17,14 @@ const AboutUsPage = () => {
             </p>
           </div>
           <div className="md:w-1/2">
-            <img src="https://via.placeholder.com/400" alt="About Us" className="w-full rounded-lg shadow-lg" />
+            <img src="/images/about.png" alt="About Us" className="w-full rounded-lg shadow-lg animate-fadeInUp" />
           </div>
         </div>
 
         {/* Mission Section */}
         <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
           <div className="md:w-1/2 order-2 md:order-1">
-            <img src="https://via.placeholder.com/400" alt="Our Mission" className="w-full rounded-lg shadow-lg" />
+            <img src="/images/mission.jpg" alt="Our Mission" className="w-full rounded-lg shadow-lg animate-fadeInUp" />
           </div>
           <div className="md:w-1/2 order-1 md:order-2">
             <h2 className="text-2xl md:text-4xl font-bold text-secondary">Our Mission</h2>
@@ -47,14 +47,18 @@ const AboutUsPage = () => {
             </p>
           </div>
           <div className="md:w-1/2">
-            <img src="https://via.placeholder.com/400" alt="Our Vision" className="w-full rounded-lg shadow-lg" />
+            <img src="/images/vision.jpg" alt="Our Vision" className="w-full rounded-lg shadow-lg animate-fadeInUp" />
           </div>
         </div>
 
         {/* Empowerment Section */}
         <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
           <div className="md:w-1/2 order-2 md:order-1">
-            <img src="https://via.placeholder.com/400" alt="Empowerment" className="w-full rounded-lg shadow-lg" />
+            <img
+              src="/images/empowerment.jpg"
+              alt="Empowerment"
+              className="w-full rounded-lg shadow-lg animate-fadeInUp"
+            />
           </div>
           <div className="md:w-1/2 order-1 md:order-2">
             <h2 className="text-2xl md:text-4xl font-bold text-secondary">Empowerment</h2>

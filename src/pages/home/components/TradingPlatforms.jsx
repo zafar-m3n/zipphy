@@ -6,7 +6,7 @@ const TradingPlatforms = () => {
     <section className="bg-background py-16 px-8 lg:py-24 lg:px-16">
       <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center">
         <div className="lg:w-1/2">
-          <img src="https://via.placeholder.com/600x400" alt="Trading Platform" className="rounded-lg shadow-lg" />
+          <img src="/images/benefits.webp" alt="Trading Platform" />
         </div>
 
         {/* Content Section */}

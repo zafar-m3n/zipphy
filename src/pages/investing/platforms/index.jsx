@@ -13,7 +13,7 @@ const Platforms = () => {
         "Algorithmic trading support",
         "Access to trading robots and indicators",
       ],
-      image: "https://via.placeholder.com/400x300",
+      image: "/images/new-mt5-platforms.jpg",
     },
     {
       name: "MetaTrader 5 Mobile",
@@ -25,7 +25,7 @@ const Platforms = () => {
         "Real-time notifications",
         "Available for Android & iOS",
       ],
-      image: "https://via.placeholder.com/400x300",
+      image: "/images/metatraders3.webp",
     },
     {
       name: "WebTrader",
@@ -37,7 +37,7 @@ const Platforms = () => {
         "Advanced analysis tools",
         "Secure execution capabilities",
       ],
-      image: "https://via.placeholder.com/400x300",
+      image: "/images/webtrader.png",
     },
   ];
 
@@ -80,14 +80,22 @@ const Platforms = () => {
 
                   {/* Image Content */}
                   <div className="lg:w-1/2 flex justify-center lg:justify-end relative mt-10 lg:mt-0">
-                    <img src={platform.image} alt={platform.name} className="rounded-lg shadow-lg w-full max-w-md" />
+                    <img
+                      src={platform.image}
+                      alt={platform.name}
+                      className="rounded-lg animate-fadeInUp w-full max-w-md"
+                    />
                   </div>
                 </>
               ) : (
                 <>
                   {/* Image Content */}
                   <div className="lg:w-1/2 flex justify-center lg:justify-start relative mt-10 lg:mt-0">
-                    <img src={platform.image} alt={platform.name} className="rounded-lg shadow-lg w-full max-w-md" />
+                    <img
+                      src={platform.image}
+                      alt={platform.name}
+                      className="rounded-lg animate-fadeInUp w-full max-w-md"
+                    />
                   </div>
 
                   {/* Text Content */}

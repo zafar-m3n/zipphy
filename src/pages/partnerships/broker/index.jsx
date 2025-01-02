@@ -58,9 +58,9 @@ const Broker = () => {
           </div>
           <div className="md:w-1/2">
             <img
-              src="https://via.placeholder.com/500x500"
+              src="/images/broker.jpg"
               alt="Introducing Broker Program"
-              className="w-full rounded-lg shadow-lg"
+              className="w-full rounded-lg animate-fadeInUp"
             />
           </div>
         </div>

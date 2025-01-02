@@ -10,17 +10,13 @@ const Cryptocurrency = () => {
       <div className="container mx-auto px-4 py-12 flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
         {/* Left Side - Image Content */}
         <div className="md:w-1/2 relative">
-          <img
-            src="https://via.placeholder.com/500x700"
-            alt="Cryptocurrency Trading"
-            className="w-full rounded-lg shadow-lg"
-          />
+          <img src="/images/stocktrade.png" alt="Cryptocurrency Trading" className="w-full rounded-lg shadow-lg" />
           {/* Floating Elements */}
-          <div className="absolute bottom-0 left-[-40px]">
-            <img src="https://via.placeholder.com/100x100" alt="Bitcoin" className="w-24 h-24" />
+          <div className="absolute top-[50px] left-[-40px]">
+            <img src="/images/btc.jpg" alt="Bitcoin" className="w-24 h-24 rounded-full animate-float" />
           </div>
           <div className="absolute bottom-0 right-[-40px]">
-            <img src="https://via.placeholder.com/100x100" alt="Ethereum" className="w-24 h-24" />
+            <img src="/images/eth.jpg" alt="Ethereum" className="w-24 h-24 rounded-full animate-float" />
           </div>
         </div>
 

@@ -24,9 +24,9 @@ const Welcome = () => {
       {/* Image/GIF */}
       <div className="lg:w-1/2 mt-8 lg:mt-0 flex justify-center">
         <img
-          src="/images/trading-dashboard.jpg"
+          src="/images/global.png"
           alt="Dynamic Trading Dashboard"
-          className="w-full max-w-md lg:max-w-lg rounded-lg shadow-lg"
+          className="w-full max-w-md lg:max-w-lg rounded-lg shadow-lg animate-fadeInUp"
         />
       </div>
     </section>

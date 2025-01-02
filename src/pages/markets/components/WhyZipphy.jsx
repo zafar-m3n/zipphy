@@ -1,4 +1,5 @@
 import React from "react";
+import Icon from "@/components/ui/Icon";
 
 const WhyZipphy = () => {
   const features = [
@@ -6,25 +7,25 @@ const WhyZipphy = () => {
       title: "Competitive Spreads",
       description:
         "Experience tighter spreads and maximize your trading potential. Our commitment to transparency ensures you get the best rates.",
-      image: "https://via.placeholder.com/150", // Replace with the actual image URL
+      icon: "mdi:trophy-outline",
     },
     {
       title: "Safety of Funds",
       description:
         "Your funds are completely safe & secured, with negative-balance protection ensuring peace of mind in financial transactions.",
-      image: "https://via.placeholder.com/150", // Replace with the actual image URL
+      icon: "mdi:shield-check",
     },
     {
       title: "Seamless Trading",
       description:
         "Enjoy the benefits of top-tier execution, ensuring that your trades are executed swiftly and efficiently. Our advanced trading infrastructure minimizes latency, providing you with a competitive edge in the fast-paced financial markets.",
-      image: "https://via.placeholder.com/150", // Replace with the actual image URL
+      icon: "mdi:swap-horizontal",
     },
     {
       title: "Trusted by Thousands",
       description:
         "The preferred choice for thousands of global traders, our platform attracts more users and partners daily.",
-      image: "https://via.placeholder.com/150", // Replace with the actual image URL
+      icon: "mdi:account-group-outline",
     },
   ];
 
@@ -40,7 +41,7 @@ const WhyZipphy = () => {
               index % 2 === 0 ? "w-full md:w-2/5 bg-accent/30" : "w-full md:w-1/3 bg-secondary/30"
             }`}
           >
-            <img src={feature.image} alt={feature.title} className="w-16 h-16 mb-4 mx-auto" />
+            <Icon icon={feature.icon} className="text-6xl text-accent mx-auto" />
             <h3 className="text-lg md:text-xl font-bold text-secondary text-center">{feature.title}</h3>
             <p className="text-gray-700 text-sm md:text-base mt-2 text-center">{feature.description}</p>
           </div>

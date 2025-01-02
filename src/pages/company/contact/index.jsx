@@ -11,7 +11,7 @@ const ContactPage = () => {
       {/* Contact Form Section */}
       <div className="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
         <div className="md:w-1/2">
-          <img src="https://via.placeholder.com/500x500" alt="Contact Us" className="w-full rounded-lg shadow-lg" />
+          <img src="/images/contact.png" alt="Contact Us" className="w-full rounded-lg shadow-lg" />
         </div>
         <div className="md:w-1/2">
           <form className="bg-white rounded-lg shadow-lg p-6">

@@ -10,10 +10,10 @@ const Forex = () => {
       <div className="container mx-auto px-4 py-12 flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
         {/* Left Side - Image Content */}
         <div className="md:w-1/2 relative">
-          <img src="https://via.placeholder.com/500x700" alt="Forex Trading" className="w-full rounded-lg shadow-lg" />
+          <img src="/images/stocktrade.png" alt="Forex Trading" className="w-full rounded-lg shadow-lg" />
           {/* Floating Symbol */}
           <div className="absolute top-0 left-[-50px]">
-            <img src="https://via.placeholder.com/100x100" alt="Euro Symbol" className="w-32 h-32" />
+            <img src="/images/forex.jpg" alt="Forex" className="w-32 h-32 rounded-full animate-float" />
           </div>
         </div>
 

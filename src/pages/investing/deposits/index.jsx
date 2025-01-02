@@ -47,12 +47,27 @@ const Deposits = () => {
         {/* Header Section */}
         <div className="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
           {/* Left Side - Image */}
-          <div className="md:w-1/2 relative">
-            <img
-              src="https://via.placeholder.com/500x700"
-              alt="Seamless Financial Transactions"
-              className="w-full rounded-lg shadow-lg"
-            />
+          <div className="lg:w-1/2 flex justify-center lg:justify-end relative mt-10 lg:mt-0">
+            <div className="relative w-full h-[400px] flex items-center justify-center">
+              <img
+                src="/images/seamless1.jpg"
+                alt="Trader 1"
+                className="w-40 lg:w-52 rounded-lg shadow-lg absolute top-0 left-[10%] animate-float"
+                style={{ animationDelay: "0s" }}
+              />
+              <img
+                src="/images/seamless2.jpg"
+                alt="Trader 2"
+                className="w-52 lg:w-64 rounded-lg shadow-lg absolute top-[40%] left-[30%] transform -translate-x-1/2 animate-float"
+                style={{ animationDelay: "0.5s" }}
+              />
+              <img
+                src="/images/seamless3.jpg"
+                alt="Trader 3"
+                className="w-44 lg:w-56 rounded-lg shadow-lg absolute left-[60%] animate-float"
+                style={{ animationDelay: "1s" }}
+              />
+            </div>
           </div>
 
           {/* Right Side - Content */}
@@ -61,9 +76,8 @@ const Deposits = () => {
             <h1 className="text-3xl md:text-4xl font-bold text-secondary mt-2">Seamless Financial Transactions</h1>
             <p className="text-gray-700 mt-4">
               At Zipphy, we understand the importance of smooth and secure financial transactions in the world of
-              trading. Our platform offers import {ContactForm} from '@/components/ContactForm'; a user-friendly
-              interface for hassle-free deposits and withdrawals. Easily fund your account to start trading or withdraw
-              your profits with confidence.
+              trading. Our platform offers a user-friendly interface for hassle-free deposits and withdrawals. Easily
+              fund your account to start trading or withdraw your profits with confidence.
             </p>
             <p className="text-gray-700 mt-4">
               We provide a variety of secure payment methods, ensuring that your financial transactions are conducted

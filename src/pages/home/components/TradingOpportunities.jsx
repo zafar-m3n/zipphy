@@ -55,19 +55,19 @@ const TradingOpportunities = () => {
         <div className="lg:w-1/2 flex justify-center lg:justify-end relative mt-10 lg:mt-0">
           <div className="relative w-full h-[400px] flex items-center justify-center">
             <img
-              src="https://picsum.photos/200"
+              src="/images/about.png"
               alt="Trader 1"
               className="w-40 lg:w-52 rounded-lg shadow-lg absolute top-0 left-[30%] animate-float"
               style={{ animationDelay: "0s" }}
             />
             <img
-              src="https://picsum.photos/200"
+              src="/images/forex.jpg"
               alt="Trader 2"
               className="w-52 lg:w-64 rounded-lg shadow-lg absolute top-[40%] left-[50%] transform -translate-x-1/2 animate-float"
               style={{ animationDelay: "0.5s" }}
             />
             <img
-              src="https://picsum.photos/200"
+              src="/images/empowerment.jpg"
               alt="Trader 3"
               className="w-44 lg:w-56 rounded-lg shadow-lg absolute left-[70%] animate-float"
               style={{ animationDelay: "1s" }}

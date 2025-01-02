@@ -26,24 +26,31 @@ const Stocks = () => {
         </div>
         {/* Right Side - Image Content */}
         <div className="md:w-1/2 relative">
-          <img src="https://via.placeholder.com/500x700" alt="Stock Trading" className="w-full rounded-lg shadow-lg" />
+          <img src="/images/stocktrade.png" alt="Stock Trading" className="w-full rounded-lg shadow-lg" />
           {/* Floating Logos */}
           <div className="absolute top-[-20px] left-[-20px]">
-            <img src="https://via.placeholder.com/50" alt="Google" className="rounded-full shadow-lg" />
+            <img
+              src="/images/nvda.png"
+              alt="Nvidia Corporation"
+              className="h-20 w-20 rounded-full shadow-lg animate-float"
+            />
           </div>
           <div className="absolute bottom-[-20px] left-[20px]">
-            <img src="https://via.placeholder.com/50" alt="Amazon" className="rounded-full shadow-lg" />
+            <img src="/images/googl.jpg" alt="Alphabet Inc." className="h-28 w-28 rounded-full shadow-lg animate-float" />
           </div>
           <div className="absolute top-[20px] right-[-20px]">
-            <img src="https://via.placeholder.com/50" alt="Twitter" className="rounded-full shadow-lg" />
+            <img
+              src="/images/amzn.jpg"
+              alt="Amazon.com Inc."
+              className="h-10 w-10 rounded-full shadow-lg animate-float"
+            />
           </div>
           <div className="absolute bottom-[-20px] right-[20px]">
-            <img src="https://via.placeholder.com/50" alt="Meta" className="rounded-full shadow-lg" />
+            <img src="/images/tsla.png" alt="Tesla In." className="h-32 w-32 rounded-full shadow-lg animate-float" />
           </div>
         </div>
       </div>
 
-      {/* Additional Sections */}
       <WhyZipphy />
       <HowToGetStarted />
       <Markets currentMarket="Stocks" />

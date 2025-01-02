@@ -10,14 +10,10 @@ const Indices = () => {
       <div className="container mx-auto px-4 py-12 flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
         {/* Left Side - Image Content */}
         <div className="md:w-1/2 relative">
-          <img
-            src="https://via.placeholder.com/500x700"
-            alt="Indices Trading"
-            className="w-full rounded-lg shadow-lg"
-          />
+          <img src="/images/stocktrade.png" alt="Indices Trading" className="w-full rounded-lg shadow-lg" />
           {/* Floating Elements */}
           <div className="absolute bottom-0 left-[-40px]">
-            <img src="https://via.placeholder.com/100x100" alt="Stock Market Graph" className="w-24 h-24" />
+            <img src="/images/hero-1.png" alt="Stock Market Graph" className="w-24 h-24 rounded-full animate-float" />
           </div>
         </div>
 

@@ -36,7 +36,9 @@ const FAQs = () => {
           </div>
           <div className="flex-1">
             <div className="w-full h-64 md:h-full bg-gray-300 rounded-lg flex items-center justify-center">
-              <span className="text-gray-500 text-lg">Image Placeholder</span>
+              <div className="relative w-full rounded-lg shadow-lg overflow-hidden">
+                <img src="/images/faq.png" alt="Contact Us" className="w-full" />
+              </div>
             </div>
           </div>
         </div>
