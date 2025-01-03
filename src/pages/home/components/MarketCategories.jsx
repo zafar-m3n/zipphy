@@ -39,12 +39,18 @@ const MarketCategories = () => {
     <section className="p-8 lg:p-16">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-4xl font-bold text-primary">Explore The Markets</h2>
+          <h2 className="text-xl md:text-3xl font-bold text-primary">Explore The Markets</h2>
         </div>
-        <div className="flex items-center">
-          <div className="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0">
+          {/* Market Grid */}
+          <div className="w-full md:w-1/2 grid grid-cols-2 lg:grid-cols-3 gap-6">
             {markets.map((market, index) => (
-              <div key={index} className="flex flex-col items-center text-center space-y-4 animate-float">
+              <div
+                key={index}
+                className={`flex flex-col items-center text-center space-y-4 animate-float ${
+                  index === markets.length - 1 ? "col-span-2 row-span-2 justify-center items-center" : ""
+                }`}
+              >
                 <img src={market.image} alt={market.title} className="w-24 h-24 object-contain" />
                 <h3 className="text-xl font-semibold text-primary">{market.title}</h3>
                 <a href={market.link} className="text-accent font-medium hover:underline flex items-center">
@@ -63,6 +69,8 @@ const MarketCategories = () => {
               </div>
             ))}
           </div>
+
+          {/* Top Stories */}
           <div className="w-full md:w-1/2">
             <TopStories />
           </div>

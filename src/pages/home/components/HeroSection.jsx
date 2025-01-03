@@ -3,11 +3,12 @@ import React, { useState, useEffect } from "react";
 const HeroSection = () => {
   const slides = [
     {
-      image: "/images/hero-1.png",
+      image: "/images/hero-4.png",
       title: "Trade Smarter, Not Harder",
       description: "Join millions of traders leveraging cutting-edge tools for maximum returns.",
       button: "Start Trading",
       alignment: "text-right justify-end",
+      opacity: "bg-opacity-50",
     },
     {
       image: "/images/hero-2.jpg",
@@ -15,13 +16,15 @@ const HeroSection = () => {
       description: "Stay ahead with real-time data and expert insights at your fingertips.",
       button: "Learn More",
       alignment: "text-left justify-start",
+      opacity: "bg-opacity-50",
     },
     {
-      image: "/images/hero-3.jpg",
+      image: "/images/hero-5.png",
       title: "Your Journey to Financial Freedom",
       description: "Achieve your goals with a platform designed for traders of all levels.",
       button: "Get Started",
       alignment: "text-center justify-center",
+      opacity: "bg-opacity-60",
     },
   ];
 
@@ -37,7 +40,7 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative h-96 md:h-screen flex flex-col justify-center text-white"
+      className="relative h-96 lg:h-screen flex flex-col justify-center text-white"
       style={{
         backgroundImage: `url(${slides[currentIndex].image})`,
         backgroundSize: "cover",
@@ -45,7 +48,7 @@ const HeroSection = () => {
         transition: "background-image 1s ease-in-out",
       }}
     >
-      <div className={`absolute inset-0 bg-black bg-opacity-50 flex items-center`}>
+      <div className={`absolute inset-0 bg-black ${slides[currentIndex].opacity} flex items-center`}>
         <div className={`container mx-auto flex items-center ${slides[currentIndex].alignment}`}>
           <div className="max-w-2xl p-8 animation-fadeInUp" style={{ animation: "fadeInUp 1s ease-out" }}>
             <h1 className="text-2xl md:text-5xl font-bold mb-4">{slides[currentIndex].title}</h1>

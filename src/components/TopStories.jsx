@@ -28,7 +28,7 @@ const TopStories = () => {
   return (
     <div
       className="tradingview-widget-container w-full h-full overflow-y-auto"
-      style={{ height: "550px", border: "none" }} // Set fixed height and remove border
+      style={{ height: "550px", border: "none" }}
     >
       <div id="tradingview-timeline-widget" className="tradingview-widget-container__widget h-full"></div>
     </div>

@@ -8,51 +8,46 @@ const TradingPlatforms = () => {
         <div className="lg:w-1/2">
           <img src="/images/benefits.webp" alt="Trading Platform" />
         </div>
-
-        {/* Content Section */}
         <div className="lg:w-1/2 space-y-6 mb-12 lg:mb-0">
-          <h2 className="text-2xl md:text-4xl font-bold text-primary">
+          <h2 className="text-xl md:text-3xl font-bold text-primary text-center lg:text-left">
             Empowering Every Trader with Limitless Platforms
           </h2>
-          <p className="text-sm md:text-lg text-secondary text-justify">
+          <p className="text-sm md:text-base text-secondary text-justify">
             Zipphy reimagines trading with next-level tools that empower you to stay ahead. Dive into a platform that
             blends real-time market insights, personalized dashboards, and robust charting capabilities, our platforms
             are built to give traders the upper hand in an ever-evolving market landscape.
           </p>
           <ul className="space-y-6">
             <li className="flex space-x-4">
-              <div className="flex items-center justify-center w-20 h-12 bg-primary rounded-full">
-                <Icon icon="bx:bx-award" width={24} className="text-background" />
+              <div className="flex items-center justify-center bg-primary rounded-full w-12 h-12 flex-shrink-0">
+                <Icon icon="bx:bx-award" className="text-background text-lg" />
               </div>
               <div>
-                <h3 className="text-md md:text-xl font-semibold text-primary">Multi-Award-Winning Platforms</h3>
+                <h3 className="text-base md:text-xl font-semibold text-primary">Multi-Award-Winning Platforms</h3>
                 <p className="text-secondary text-justify text-sm md:text-base">
                   With over 15 years of trust and excellence, our MT4 and MT5 platforms have earned multiple accolades,
                   making them the go-to choice for traders around the globe.
                 </p>
               </div>
             </li>
-
-            {/* Feature 2 */}
             <li className="flex space-x-4">
-              <div className="flex items-center justify-center w-[5.5rem] h-12 bg-primary rounded-full">
-                <Icon icon="bx:bx-trending-up" className="h-6 w-6 text-background" />
+              <div className="flex items-center justify-center bg-primary rounded-full w-12 h-12 flex-shrink-0">
+                <Icon icon="bx:bx-trending-up" className="text-background text-lg" />
               </div>
               <div>
-                <h3 className="text-md md:text-xl font-semibold text-primary">Fast and User-Friendly</h3>
+                <h3 className="text-base md:text-xl font-semibold text-primary">Fast and User-Friendly</h3>
                 <p className="text-secondary text-justify text-sm md:text-base">
                   Our platforms are tailored to all trading levels, offering lightning-fast execution and a reliable
                   interface to navigate a broad range of financial assets effortlessly.
                 </p>
               </div>
             </li>
-
             <li className="flex space-x-4">
-              <div className="flex items-center justify-center w-[4.5rem] h-12 bg-primary rounded-full">
-                <Icon icon="bx:bx-mobile" className="text-background" />
+              <div className="flex items-center justify-center bg-primary rounded-full w-12 h-12 flex-shrink-0">
+                <Icon icon="bx:bx-mobile" className="text-background text-lg" />
               </div>
               <div>
-                <h3 className="text-md md:text-xl font-semibold text-primary">
+                <h3 className="text-base md:text-xl font-semibold text-primary">
                   Trade Without Limits, Anytime, Anywhere
                 </h3>
                 <p className="text-secondary text-justify text-sm md:text-base">

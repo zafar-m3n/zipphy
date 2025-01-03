@@ -31,16 +31,19 @@ const WhyZipphy = () => {
 
   return (
     <section className="py-16 px-8 lg:py-24 lg:px-16">
-      <h2 className="text-2xl md:text-4xl font-bold text-primary text-center">Why Trade with Zipphy</h2>
+      <h2 className="text-xl md:text-3xl font-bold text-primary text-center mb-12">Why Trade with Zipphy</h2>
       <div className="container mx-auto flex flex-col lg:flex-row items-center">
         <div className="lg:w-1/4">
-          <img src="/images/card.jpg" alt="Trading Platform" />
+          <img src="/images/card.jpg" alt="Trading Platform" className="rounded-lg" />
         </div>
-        <div className="lg:w-3/4 relative h-96">
+        <div className="lg:w-3/4 relative h-auto lg:h-96">
           {floatingItems.map((item, index) => (
             <div
               key={index}
-              className="absolute bg-white shadow-lg rounded-md p-4 w-60 animate-float"
+              className={`p-4 w-full lg:w-60 bg-white shadow-lg rounded-md mb-6 lg:mb-0 lg:animate-float ${
+                index === 0 ? "mt-0" : "mt-4 lg:mt-0"
+              } ${index === floatingItems.length - 1 ? "mb-0" : "mb-6 lg:mb-0"} 
+              lg:absolute`}
               style={{
                 ...item.style,
                 animationDelay: `${index * 0.5}s`,

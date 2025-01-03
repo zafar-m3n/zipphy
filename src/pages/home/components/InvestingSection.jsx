@@ -4,28 +4,30 @@ import Icon from "@/components/ui/Icon";
 const InvestingSection = () => {
   return (
     <section className="p-8 lg:p-16 animate-appear-right animation-range-entryCover animation-timeline-view">
-      <div className="container mx-auto flex flex-col lg:flex-row items-center space-x-6">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center space-x-0 md:space-x-6">
         {/* Text Section */}
-        <div className="lg:w-1/2 space-y-6 mb-12 lg:mb-0">
-          <h2 className="text-2xl md:text-4xl font-bold text-primary">Experience Hassle-Free Investing with Zipphy</h2>
-          <p className="text-sm md:text-lg text-secondary text-justify">
+        <div className="lg:w-1/2 space-y-6 mb-6 lg:mb-0 text-center lg:text-left">
+          <h2 className="text-xl md:text-3xl font-bold text-primary">
+            Experience Hassle-Free Investing with Zipphy
+          </h2>
+          <p className="text-sm md:text-base text-secondary text-justify">
             Unleash your financial growth with Zipphy. Our platform brings all your investments together, simplifying
             management and boosting efficiency. Benefit from live tracking and minimal fees, making your investment
             journey smooth and rewarding.
           </p>
-          <p className="text-sm md:text-lg text-secondary text-justify">
+          <p className="text-sm md:text-base text-secondary text-justify">
             Zipphy transforms your trading experience with intuitive tools and real-time data, empowering confident
             decisions at any level. With features like personalized dashboards and advanced analytics, every trade
             brings you closer to success
           </p>
           <button
-            className="px-3 py-1.5 md:px-6 md:py-3 bg-accent text-primary rounded-sm md:rounded-lg text-sm md:text-lg hover:bg-opacity-80 transition"
+            className="px-3 py-1.5 md:px-6 md:py-3 bg-accent text-primary rounded-sm md:rounded-lg text-sm md:text-base hover:bg-opacity-80 transition"
             onClick={() => window.open("https://app.zipphy.com/login", "_blank")}
           >
             Register Now
           </button>
         </div>
-        <div className="lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="w-full  lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-white rounded-lg shadow-lg p-6 text-center space-y-4">
             <div className="flex items-center justify-center w-12 h-12 mx-auto bg-secondary text-accent rounded-full">
               <Icon icon="game-icons:receive-money" width={28} />

@@ -34,9 +34,9 @@ const Stats = () => {
       className="animate-appear-left animation-range-entryCover animation-timeline-view p-8 lg:p-16"
     >
       <div className="flex flex-col text-center w-full mb-20">
-        <h2 className="text-2xl md:text-4xl font-bold text-secondary">Our Numbers Speak For Itself</h2>
+        <h2 className="text-xl md:text-3xl font-bold text-primary">Our Numbers Speak For Itself</h2>
       </div>
-      <div className="flex justify-around items-center md:flex-wrap lg:flex-nowrap gap-0 md:gap-6">
+      <div className="flex justify-around items-center flex-wrap lg:flex-nowrap gap-0 md:gap-6">
         {isVisible && (
           <>
             <div className="h-72 w-72 shadow-lg rounded-full p-4 flex justify-center items-center">
