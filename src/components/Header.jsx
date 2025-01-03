@@ -3,6 +3,7 @@ import { navMenu } from "@/data/data";
 import Icon from "@/components/ui/Icon";
 import logo from "@/assets/logo-white.png";
 import logoDark from "@/assets/logo-dark.png";
+import TickerTape from "@/components/TickerTape";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -27,6 +28,7 @@ const Header = () => {
 
   return (
     <header className="bg-primary text-background shadow-md">
+      <TickerTape />
       <div className="container mx-auto flex justify-between items-center px-4">
         <div className="flex items-center">
           <a href="/">
