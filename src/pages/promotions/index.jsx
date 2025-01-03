@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const promotionsData = [
   {
@@ -32,6 +32,9 @@ const promotionsData = [
 ];
 
 const Promotions = () => {
+  useEffect(() => {
+    document.title = "Zipphy | Promotions";
+  }, []);
   return (
     <div className="container mx-auto px-4 py-8 space-y-12">
       {promotionsData.map((promotion, index) => (

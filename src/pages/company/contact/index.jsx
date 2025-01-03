@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Icon from "@/components/ui/Icon";
 
 const ContactPage = () => {
+  useEffect(() => {
+    document.title = "Zipphy | Company";
+  }, []);
+
   return (
     <div className="container mx-auto px-4 py-8 space-y-12">
       <div className="text-center">

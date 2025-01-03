@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ContactForm from "@/components/ContactForm";
 
 const AccountTypes = () => {
   const accounts = [
     {
       name: "Classic",
-      price: "$100",
+      price: "$200",
       features: [
         "Daily Analysis",
         "Leverage 1:100",
@@ -111,6 +111,10 @@ const AccountTypes = () => {
       cta: "Register Now!",
     },
   ];
+
+  useEffect(() => {
+    document.title = "Zipphy | Investing";
+  }, []);
 
   return (
     <>

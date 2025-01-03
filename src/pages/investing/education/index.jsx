@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ContactForm from "@/components/ContactForm";
 
 const Education = () => {
@@ -36,6 +36,10 @@ const Education = () => {
         While safer than individual stocks, index trading requires understanding macroeconomic trends and market fundamentals. It is ideal for those seeking stable, long-term growth opportunities.`,
     },
   ];
+
+  useEffect(() => {
+    document.title = "Zipphy | Investing";
+  }, []);
 
   return (
     <>

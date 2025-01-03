@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ContactForm from "@/components/ContactForm";
 import Icon from "@/components/ui/Icon";
 
 const Broker = () => {
+  useEffect(() => {
+    document.title = "Zipphy | Partnerships";
+  }, []);
+
   const features = [
     {
       title: "User-Friendly Interface",

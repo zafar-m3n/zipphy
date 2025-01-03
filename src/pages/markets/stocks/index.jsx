@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Markets from "../components/Markets";
 import HowToGetStarted from "@/components/HowToGetStarted";
 import WhyZipphy from "../components/WhyZipphy";
 
 const Stocks = () => {
+  useEffect(() => {
+    document.title = "Zipphy | Markets";
+  }, []);
+
   return (
     <div>
       {/* Header Section */}
@@ -36,17 +40,25 @@ const Stocks = () => {
             />
           </div>
           <div className="absolute bottom-[-20px] left-[20px]">
-            <img src="/images/googl.jpg" alt="Alphabet Inc." className="h-28 w-28 rounded-full shadow-lg animate-float" />
+            <img
+              src="/images/googl.jpg"
+              alt="Alphabet Inc."
+              className="h-28 w-28 rounded-full shadow-lg animate-float"
+            />
           </div>
           <div className="absolute top-[20px] right-[-20px]">
             <img
-              src="/images/amzn.jpg"
+              src="/images/stocksLogos/amzn.jpg"
               alt="Amazon.com Inc."
               className="h-10 w-10 rounded-full shadow-lg animate-float"
             />
           </div>
           <div className="absolute bottom-[-20px] right-[20px]">
-            <img src="/images/tsla.png" alt="Tesla In." className="h-32 w-32 rounded-full shadow-lg animate-float" />
+            <img
+              src="/images/stocksLogos/tsla.png"
+              alt="Tesla In."
+              className="h-32 w-32 rounded-full shadow-lg animate-float"
+            />
           </div>
         </div>
       </div>

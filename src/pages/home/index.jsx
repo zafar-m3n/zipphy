@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeroSection from "./components/HeroSection";
 import Welcome from "./components/Welcome";
 import TradingOpportunities from "./components/TradingOpportunities";
@@ -8,6 +8,10 @@ import MarketCategories from "./components/MarketCategories";
 import ClientSlider from "./components/ClientsSlider";
 
 const HomePage = () => {
+  useEffect(() => {
+    document.title = "Zipphy | Home";
+  }, []);
+
   return (
     <div className="">
       <HeroSection />

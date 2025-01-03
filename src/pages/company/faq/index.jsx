@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ContactForm from "@/components/ContactForm";
 import Accordion from "@/components/ui/Accordion";
 
@@ -25,6 +25,10 @@ const FAQs = () => {
         "You can deposit funds through the client portal. Simply click on the 'Deposit Funds' tab and choose your preferred funding method. Processing times vary: standard methods may take up to 24 hours, while bank wire transfers may take up to 3 business days, depending on the bank.",
     },
   ];
+
+  useEffect(() => {
+    document.title = "Zipphy | Company";
+  }, []);
 
   return (
     <>

@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ContactForm from "@/components/ContactForm";
 import HowToGetStarted from "@/components/HowToGetStarted";
 
 const AboutUsPage = () => {
+  useEffect(() => {
+    document.title = "Zipphy | Company";
+  }, []);
+
   return (
     <>
       <div className="container mx-auto px-4 py-8 space-y-12">

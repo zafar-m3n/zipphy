@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ContactForm from "@/components/ContactForm";
 
 const ReferFriend = () => {
+  useEffect(() => {
+    document.title = "Zipphy | Partnerships";
+  }, []);
+
   return (
     <>
       <div className="container mx-auto px-4 py-8 space-y-12">
@@ -19,11 +23,7 @@ const ReferFriend = () => {
             </button>
           </div>
           <div className="md:w-1/2">
-            <img
-              src="/images/refer.png"
-              alt="Refer a Friend"
-              className="w-full rounded-lg animate-float"
-            />
+            <img src="/images/refer.png" alt="Refer a Friend" className="w-full rounded-lg animate-float" />
           </div>
         </div>
 

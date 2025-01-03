@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Markets from "../components/Markets";
 import HowToGetStarted from "@/components/HowToGetStarted";
 import WhyZipphy from "../components/WhyZipphy";
 
 const Forex = () => {
+  useEffect(() => {
+    document.title = "Zipphy | Markets";
+  }, []);
+
   return (
     <div>
       {/* Header Section */}

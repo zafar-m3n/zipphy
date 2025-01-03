@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ContactForm from "@/components/ContactForm";
 
 const Platforms = () => {
@@ -40,6 +40,10 @@ const Platforms = () => {
       image: "/images/webtrader.png",
     },
   ];
+
+  useEffect(() => {
+    document.title = "Zipphy | Investing";
+  }, []);
 
   return (
     <>
