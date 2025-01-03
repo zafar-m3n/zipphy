@@ -7,6 +7,8 @@ import TradingPlatforms from "./components/TradingPlatforms";
 import MarketCategories from "./components/MarketCategories";
 import ClientSlider from "./components/ClientsSlider";
 import Stats from "./components/Stats";
+import Deposits from "./components/Deposits";
+import WhyZipphy from "./components/WhyZipphy";
 
 const HomePage = () => {
   useEffect(() => {
@@ -21,8 +23,10 @@ const HomePage = () => {
         <TradingPlatforms />
         <TradingOpportunities />
         <ClientSlider />
+        <Deposits />
         <InvestingSection />
         <Stats />
+        <WhyZipphy />
         <MarketCategories />
       </div>
     </div>
