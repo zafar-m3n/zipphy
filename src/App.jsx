@@ -17,6 +17,7 @@ import CryptoCurrencies from "@/pages/markets/cryptocurrencies/index";
 import Indices from "@/pages/markets/indices/index";
 import ReferFriend from "@/pages/partnerships/refer/index";
 import Broker from "@/pages/partnerships/broker/index";
+import NotFound from "@/pages/NotFound";
 
 const App = () => {
   return (
@@ -49,6 +50,9 @@ const App = () => {
           <Route path="/company/about-us" element={<AboutUsPage />} />
           <Route path="/company/faq" element={<FAQs />} />
           <Route path="/company/contact-us" element={<ContactPage />} />
+
+          {/* Catch-all route */}
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
