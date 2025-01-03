@@ -30,7 +30,7 @@ const WhyZipphy = () => {
   ];
 
   return (
-    <section className="bg-background py-16 px-8 lg:py-24 lg:px-16 animate-appear-right animation-range-entryCover animation-timeline-view">
+    <section className="py-16 px-8 lg:py-24 lg:px-16">
       <h2 className="text-2xl md:text-4xl font-bold text-primary text-center">Why Trade with Zipphy</h2>
       <div className="container mx-auto flex flex-col lg:flex-row items-center">
         <div className="lg:w-1/4">
