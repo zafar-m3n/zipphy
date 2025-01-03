@@ -6,7 +6,7 @@ const Deposits = () => {
     {
       type: "Classic",
       minimumDeposit: "$100",
-      minimumWithdrawal: "$50",
+      minimumWithdrawal: "$25",
       timeFrame: "1-3 Business Days",
     },
     {
