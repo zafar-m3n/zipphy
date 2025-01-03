@@ -6,6 +6,7 @@ import InvestingSection from "./components/InvestingSection";
 import TradingPlatforms from "./components/TradingPlatforms";
 import MarketCategories from "./components/MarketCategories";
 import ClientSlider from "./components/ClientsSlider";
+import Stats from "./components/Stats";
 
 const HomePage = () => {
   useEffect(() => {
@@ -21,6 +22,7 @@ const HomePage = () => {
         <TradingOpportunities />
         <ClientSlider />
         <InvestingSection />
+        <Stats />
         <MarketCategories />
       </div>
     </div>
