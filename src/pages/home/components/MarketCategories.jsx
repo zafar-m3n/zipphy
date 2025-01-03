@@ -35,7 +35,7 @@ const MarketCategories = () => {
   ];
 
   return (
-    <section className="p-8 lg:p-16">
+    <section className="p-8 lg:p-16 animate-appear-right animation-range-entryCover animation-timeline-view">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold text-primary">Explore The Markets</h2>

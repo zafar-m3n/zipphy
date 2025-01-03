@@ -3,7 +3,7 @@ import Icon from "@/components/ui/Icon";
 
 const InvestingSection = () => {
   return (
-    <section className="bg-background p-8 lg:p-16 animate-fadeInUp animation-range-entryCover animation-timeline-view">
+    <section className="bg-background p-8 lg:p-16 animate-appear-right animation-range-entryCover animation-timeline-view">
       <div className="container mx-auto flex flex-col lg:flex-row items-center space-x-6">
         {/* Text Section */}
         <div className="lg:w-1/2 space-y-6 mb-12 lg:mb-0">
