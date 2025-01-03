@@ -62,7 +62,7 @@ const Welcome = () => {
   const maxValue = Math.max(...stocks.map((stock) => stock.value));
 
   return (
-    <section className="flex flex-col lg:flex-row lg:space-x-6 items-center justify-between p-8 lg:p-16 animate-fadeInUp">
+    <section className="flex flex-col lg:flex-row lg:space-x-6 items-center justify-between p-8 lg:p-16 animate-appear-left animation-range-entryCover animation-timeline-view">
       <div className="lg:w-1/2 text-center lg:text-left space-y-6">
         <h2 className="text-2xl md:text-4xl font-bold text-secondary">Trading Dreams Powered by Zipphy</h2>
         <p className="text-sm md:text-lg text-justify">

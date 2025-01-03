@@ -2,7 +2,7 @@ import React from "react";
 
 const TradingOpportunities = () => {
   return (
-    <section className="relative text-secondary p-8 lg:p-16">
+    <section className="relative text-secondary p-8 lg:p-16 animate-appear-left animation-range-entryCover animation-timeline-view">
       <div className="flex flex-col lg:flex-row items-center">
         <div className="lg:w-1/2 space-y-6">
           <h2 className="text-2xl md:text-4xl font-bold text-primary">

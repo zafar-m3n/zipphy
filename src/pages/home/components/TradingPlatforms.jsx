@@ -3,7 +3,7 @@ import Icon from "@/components/ui/Icon";
 
 const TradingPlatforms = () => {
   return (
-    <section className="bg-background py-16 px-8 lg:py-24 lg:px-16">
+    <section className="bg-background py-16 px-8 lg:py-24 lg:px-16 animate-appear-right animation-range-entryCover animation-timeline-view">
       <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center">
         <div className="lg:w-1/2">
           <img src="/images/benefits.webp" alt="Trading Platform" />

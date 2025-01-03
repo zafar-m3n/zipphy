@@ -8,7 +8,7 @@ body {
 
 /* Add custom animation styles */
 @layer utilities {
-  @keyframes appear {
+  @keyframes appear-left {
     0% {
       opacity: 0;
       transform: translateX(-100px);
@@ -19,8 +19,23 @@ body {
     }
   }
 
-  .animate-appear {
-    animation: appear 1s linear;
+  @keyframes appear-right {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-appear-left {
+    animation: appear-left linear;
+  }
+
+  .animate-appear-right {
+    animation: appear-right linear;
   }
 
   .animation-timeline-view {
