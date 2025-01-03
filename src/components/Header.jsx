@@ -32,6 +32,9 @@ const Header = () => {
           <a href="/">
             <img src={logo} alt="Zipphy Logo" className="h-20" />
           </a>
+          <p className="items-center hidden md:flex text-sm text-accent me-6">
+            <span className="text-2xl italic me-1">18 </span> years
+          </p>
           <nav className="hidden md:flex space-x-6">
             {navMenu.map((item, index) => (
               <div

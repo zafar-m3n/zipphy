@@ -23,7 +23,7 @@ const Footer = () => {
             <div className="flex flex-col space-y-6">
               <div className="flex items-center">
                 <Icon icon="heroicons:envelope" className="bg-accent w-11 h-11 p-2 rounded-full" />
-                <span className="ml-4 text-background">support@zipphy.com</span>
+                <span className="ml-4 text-background">info@zipphy.com</span>
               </div>
               <div>
                 <h4 className="text-base font-semibold text-background mb-2">Australia</h4>

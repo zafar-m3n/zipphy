@@ -26,7 +26,7 @@ const promotionsData = [
     id: 4,
     title: "PREPAID MASTERCARD",
     text: "Discover the all-in-one Zipphy Mastercard®—your gateway to global financial freedom. The Zipphy Prepaid Mastercard ensures you’re always ready for what’s next with seamless, secure, and flexible financial transactions.",
-    image: "/images/card.png",
+    image: "/images/card.jpg",
     animation: "animate-fadeInUp",
   },
 ];
