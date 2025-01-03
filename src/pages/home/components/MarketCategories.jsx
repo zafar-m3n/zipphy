@@ -4,34 +4,30 @@ const MarketCategories = () => {
   const markets = [
     {
       title: "Stocks",
-      image: "https://via.placeholder.com/200x200",
       description: "Read More",
       link: "/markets/stocks",
       image: "/images/markets/1.png",
     },
     {
       title: "Forex",
-      image: "https://via.placeholder.com/200x200",
       description: "Read More",
       link: "/markets/forex",
       image: "/images/markets/2.png",
     },
     {
       title: "Commodities",
-      image: "https://via.placeholder.com/200x200",
       description: "Read More",
       link: "/markets/commodities",
       image: "/images/markets/3.png",
     },
     {
       title: "Crypto",
-      image: "https://via.placeholder.com/200x200",
       description: "Read More",
+      link: "/markets/cryptocurrencies",
       image: "/images/markets/4.png",
     },
     {
       title: "Indices",
-      image: "https://via.placeholder.com/200x200",
       description: "Read More",
       link: "/markets/indices",
       image: "/images/markets/5.png",

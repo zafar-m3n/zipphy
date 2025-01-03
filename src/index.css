@@ -5,3 +5,29 @@
 body {
   @apply font-montserrat;
 }
+
+/* Add custom animation styles */
+@layer utilities {
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-appear {
+    animation: appear 1s linear;
+  }
+
+  .animation-timeline-view {
+    animation-timeline: view();
+  }
+
+  .animation-range-entryCover {
+    animation-range: entry 0% cover 40%;
+  }
+}
