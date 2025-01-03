@@ -5,13 +5,18 @@ const TradingOpportunities = () => {
     <section className="relative text-secondary p-8 lg:p-16">
       <div className="flex flex-col lg:flex-row items-center">
         <div className="lg:w-1/2 space-y-6">
-          <h2 className="text-2xl md:text-4xl font-bold text-primary">One Broker, Countless Trading Opportunities</h2>
+          <h2 className="text-2xl md:text-4xl font-bold text-primary">
+            One Trusted Broker, Endless Trading Opportunities
+          </h2>
+
           <p className="text-sm md:text-lg text-justify">
-            With one broker at your side, a myriad of trading opportunities unfold. Dive into a world where diverse
-            markets converge, offering endless possibilities for those seeking financial growth. From stocks and
-            currencies to commodities and cryptocurrencies, our platform opens doors to a wealth of trading options.
-            Whether you're a seasoned investor or just starting, discover a seamless experience designed to amplify your
-            trading potential.
+            Trade beyond limits with a single with Zipphy. Unlock a universe of opportunities across stocks, forex,
+            commodities, and crypto. Our platform blends innovation and simplicity, giving you the power to navigate
+            markets with ease, whether you're an expert or just beginning. Seamless, intuitive, and ready to take your
+            trading to new heights.
+          </p>
+          <p className="text-sm md:text-lg text-justify font-bold italic">
+            Trade smarter, profit faster, with us by your side
           </p>
           <ul className="space-y-4">
             <li className="flex items-start space-x-3">
@@ -28,8 +33,9 @@ const TradingOpportunities = () => {
                 </svg>
               </span>
               <p className="text-justify text-sm md:text-base">
-                With our brokerage, embrace a world where myriad trading opportunities await. From traditional stocks to
-                cutting-edge cryptocurrencies and everything in between.
+                With our brokerage, step into a realm of endless trading possibilities. Explore everything from classic
+                stocks to innovative cryptocurrencies, forex, and more. Leverage powerful tools and up-to-the-minute
+                insights to stay at the forefront of every market movement.
               </p>
             </li>
             <li className="flex items-start space-x-3">
@@ -46,8 +52,9 @@ const TradingOpportunities = () => {
                 </svg>
               </span>
               <p className="text-justify text-sm md:text-base">
-                We offer a user-friendly platform designed to cater to traders of all levels. Navigate through various
-                markets effortlessly, leveraging our expertise.
+                Empower your trades with real-time data and advanced tools, giving you the edge to conquer any market,
+                anytime. Unlock hidden opportunities, analyze trends with precision, and execute your strategy
+                flawlessly, all while staying ahead of market shifts in real time .
               </p>
             </li>
           </ul>

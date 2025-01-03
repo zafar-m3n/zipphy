@@ -7,18 +7,21 @@ const InvestingSection = () => {
       <div className="container mx-auto flex flex-col lg:flex-row items-center space-x-6">
         {/* Text Section */}
         <div className="lg:w-1/2 space-y-6 mb-12 lg:mb-0">
-          <h2 className="text-2xl md:text-4xl font-bold text-primary">Simplify Your Investments with Zipphy</h2>
+          <h2 className="text-2xl md:text-4xl font-bold text-primary">Experience Hassle-Free Investing with Zipphy</h2>
           <p className="text-sm md:text-lg text-secondary text-justify">
-            Maximize your financial potential with Zipphy. Our platform empowers you to manage all your investments in
-            one place, saving you time and effort. From real-time tracking to low fees, we ensure every step of your
-            investment journey is seamless and rewarding.
+            Unleash your financial growth with Zipphy. Our platform brings all your investments together, simplifying
+            management and boosting efficiency. Benefit from live tracking and minimal fees, making your investment
+            journey smooth and rewarding.
           </p>
           <p className="text-sm md:text-lg text-secondary text-justify">
-            With Zipphy, enjoy a unified experience tailored to traders and investors of all levels. Whether it's
-            managing portfolios, accessing detailed analytics, or strategizing for the future, Zipphy is your all-in-one
-            solution for comprehensive financial management.
+            Zipphy transforms your trading experience with intuitive tools and real-time data, empowering confident
+            decisions at any level. With features like personalized dashboards and advanced analytics, every trade
+            brings you closer to success
           </p>
-          <button className="px-3 py-1.5 md:px-6 md:py-3 bg-accent text-primary rounded-sm md:rounded-lg text-sm md:text-lg hover:bg-opacity-80 transition">
+          <button
+            className="px-3 py-1.5 md:px-6 md:py-3 bg-accent text-primary rounded-sm md:rounded-lg text-sm md:text-lg hover:bg-opacity-80 transition"
+            onClick={() => window.open("https://app.zipphy.com/login", "_blank")}
+          >
             Register Now
           </button>
         </div>

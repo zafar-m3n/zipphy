@@ -64,13 +64,14 @@ const Welcome = () => {
   return (
     <section className="flex flex-col lg:flex-row lg:space-x-6 items-center justify-between p-8 lg:p-16 animate-fadeInUp">
       <div className="lg:w-1/2 text-center lg:text-left space-y-6">
-        <h2 className="text-2xl md:text-4xl font-bold text-secondary">Take positions on popular stocks</h2>
+        <h2 className="text-2xl md:text-4xl font-bold text-secondary">Trading Dreams Powered by Zipphy</h2>
         <p className="text-sm md:text-lg text-justify">
-          Trade the CFDs of popular stocks like TSLA, AMZN, and AAPL without actually owning them. Control risks while
-          benefiting from tight spreads and the ability to go long or short on global stocks across industries.
+          Venture into a realm of endless financial potential with Zipphy. Crafted for both newcomers and seasoned
+          traders, our platform offers an unmatched trading journey. Dive into a variety of markets, from stocks to
+          crypto, with cutting-edge tools and live analytics designed to guide you toward success.
         </p>
         <p className="text-sm md:text-lg text-justify">
-          Join a community of over 50 million traders and investors shaping the future of finance.
+          At Zipphy, we don’t just connect traders—we empower them to conquer the globe.
         </p>
         <button
           className="px-3 py-1.5 md:px-6 md:py-3 bg-accent text-primary rounded-sm md:rounded-lg text-sm md:text-lg hover:bg-opacity-80 transition"

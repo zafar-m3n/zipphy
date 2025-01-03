@@ -11,11 +11,13 @@ const TradingPlatforms = () => {
 
         {/* Content Section */}
         <div className="lg:w-1/2 space-y-6 mb-12 lg:mb-0">
-          <h2 className="text-2xl md:text-4xl font-bold text-primary">Powerful Platforms for Every Trader</h2>
+          <h2 className="text-2xl md:text-4xl font-bold text-primary">
+            Empowering Every Trader with Limitless Platforms
+          </h2>
           <p className="text-sm md:text-lg text-secondary text-justify">
-            At Zipphy, we empower traders with advanced, award-winning tools that transform the trading experience. With
-            cutting-edge features like real-time market data, customizable interfaces, and powerful charting tools, our
-            platforms are designed to give traders a competitive edge in today’s dynamic markets.
+            Zipphy reimagines trading with next-level tools that empower you to stay ahead. Dive into a platform that
+            blends real-time market insights, personalized dashboards, and robust charting capabilities, our platforms
+            are built to give traders the upper hand in an ever-evolving market landscape.
           </p>
           <ul className="space-y-6">
             <li className="flex space-x-4">
@@ -25,8 +27,8 @@ const TradingPlatforms = () => {
               <div>
                 <h3 className="text-md md:text-xl font-semibold text-primary">Multi-Award-Winning Platforms</h3>
                 <p className="text-secondary text-justify text-sm md:text-base">
-                  Trusted for over 15 years, our MT4 and MT5 platforms have won numerous awards, solidifying their
-                  position as the preferred choice for traders worldwide.
+                  With over 15 years of trust and excellence, our MT4 and MT5 platforms have earned multiple accolades,
+                  making them the go-to choice for traders around the globe.
                 </p>
               </div>
             </li>
@@ -50,10 +52,12 @@ const TradingPlatforms = () => {
                 <Icon icon="bx:bx-mobile" className="text-background" />
               </div>
               <div>
-                <h3 className="text-md md:text-xl font-semibold text-primary">Accessible Anytime, Anywhere</h3>
+                <h3 className="text-md md:text-xl font-semibold text-primary">
+                  Trade Without Limits, Anytime, Anywhere
+                </h3>
                 <p className="text-secondary text-justify text-sm md:text-base">
-                  Trade seamlessly on the go with apps available for Android and iOS, or enjoy the full desktop
-                  experience on Windows and Mac OS.
+                  Trade effortlessly from anywhere with our mobile apps for Android and iOS, or experience full desktop
+                  power on Windows and Mac OS—wherever you go, your trading is always within reach.
                 </p>
               </div>
             </li>
