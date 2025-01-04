@@ -36,7 +36,7 @@ const WhyZipphy = () => {
       <h2 className="text-xl md:text-3xl font-bold text-primary text-center mb-12">Why Trade with Zipphy</h2>
       <div className="container mx-auto flex flex-col lg:flex-row items-center">
         <div className="lg:w-1/4">
-          <img src="/images/card.jpg" alt="Trading Platform" className="rounded-lg" />
+          <img src="/images/whyzipphy.png" alt="Trading Platform" className="w-full rounded-lg animate-float" />
         </div>
         <div className="lg:w-3/4 relative h-auto lg:h-96">
           {floatingItems.map((item, index) => (
