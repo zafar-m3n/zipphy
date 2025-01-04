@@ -21,8 +21,8 @@ const HomePage = () => {
       <HeroSection />
       <div className="container mx-auto">
         <Welcome />
-        <MiniChartRow />
         <TradingPlatforms />
+        <MiniChartRow />
         <TradingOpportunities />
         <ClientSlider />
         <Deposits />

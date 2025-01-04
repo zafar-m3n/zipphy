@@ -3,28 +3,30 @@ import React from "react";
 const WhyZipphy = () => {
   const floatingItems = [
     {
-      title: "Reliable Platform",
-      description: "Experience seamless trading on a secure and reliable platform.",
+      title: "Lightning-Fast Trading",
+      description: "Trade at the speed of light with instant deposits and withdrawals empowering every move.",
       style: { top: "10%", left: "15%" },
     },
     {
-      title: "Advanced Tools",
-      description: "Access cutting-edge tools for market analysis.",
+      title: "Your Gateway to Markets",
+      description: "Our gateway to limitless markets, from stocks to crypto, all in one seamless platform.",
       style: { top: "10%", left: "65%" },
     },
     {
-      title: "24/7 Support",
-      description: "Get round-the-clock support from our expert team.",
+      title: "Flexible Payment Options",
+      description:
+        "Take control with a variety of secure payment methods, giving you flexibility in every transaction.",
       style: { top: "50%", left: "40%" },
     },
     {
-      title: "Diverse Markets",
-      description: "Trade in various markets, including Forex and Crypto.",
+      title: "Transparent Pricing, No Surprises",
+      description: "No surprises, only clarity—transparent pricing and zero hidden fees put you in the driver’s seat.",
       style: { top: "80%", left: "15%" },
     },
     {
-      title: "Low Fees",
-      description: "Enjoy competitive fees and maximize your profit potential.",
+      title: "Unmatched Security",
+      description:
+        "Security like never before, with top-notch encryption and fraud protection keeping your assets safe.",
       style: { top: "80%", left: "65%" },
     },
   ];

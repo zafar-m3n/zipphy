@@ -28,7 +28,6 @@ const Header = () => {
 
   return (
     <header className="bg-primary text-background shadow-md">
-      <TickerTape />
       <div className="container mx-auto flex justify-between items-center px-4">
         <div className="flex items-center">
           <a href="/">

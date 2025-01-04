@@ -11,10 +11,10 @@ const TradingOpportunities = () => {
           </h2>
 
           <p className="text-sm md:text-base text-justify">
-            Trade beyond limits with a single with Zipphy. Unlock a universe of opportunities across stocks, forex,
-            commodities, and crypto. Our platform blends innovation and simplicity, giving you the power to navigate
-            markets with ease, whether you're an expert or just beginning. Seamless, intuitive, and ready to take your
-            trading to new heights.
+            Break boundaries and trade freely with Zipphy—your all-in-one broker for limitless opportunities. Unlock a
+            world of potential across stocks, forex, commodities, and crypto— your gateway to limitless trading. Our
+            platform blends innovation and simplicity, giving you the power to navigate markets with ease, whether
+            you're an expert or just beginning. Seamless, intuitive, and ready to take your trading to new heights.
           </p>
           <p className="text-sm md:text-base text-justify font-bold italic">
             Trade smarter, profit faster, with us by your side

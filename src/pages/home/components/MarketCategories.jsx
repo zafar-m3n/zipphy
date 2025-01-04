@@ -1,5 +1,5 @@
 import React from "react";
-import TopStories from "@/components/TopStories";
+import MarketData from "@/components/MarketData";
 
 const MarketCategories = () => {
   const markets = [
@@ -70,9 +70,8 @@ const MarketCategories = () => {
             ))}
           </div>
 
-          {/* Top Stories */}
           <div className="w-full md:w-1/2">
-            <TopStories />
+            <MarketData />
           </div>
         </div>
       </div>

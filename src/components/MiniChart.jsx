@@ -12,7 +12,7 @@ const MiniChart = ({ symbol = "FX:EURUSD" }) => {
       height: 220,
       locale: "en",
       dateRange: "12M",
-      colorTheme: "dark",
+      colorTheme: "light",
       isTransparent: false,
       autosize: true,
       largeChartUrl: "",
