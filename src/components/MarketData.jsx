@@ -7,7 +7,7 @@ const MarketData = () => {
     script.src = "https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js";
     script.async = true;
     script.innerHTML = JSON.stringify({
-      width: 550,
+      width: "100%",
       height: 550,
       symbolsGroups: [
         {
@@ -65,11 +65,10 @@ const MarketData = () => {
   return (
     <div
       className="tradingview-widget-container w-full h-full overflow-y-auto"
-      style={{ height: "550px", border: "none" }}
     >
       <div
         id="tradingview-market-data-widget"
-        className="tradingview-widget-container__widget h-full pointer-events-none"
+        className="tradingview-widget-container__widget pointer-events-none"
       ></div>
     </div>
   );

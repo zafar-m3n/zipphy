@@ -43,13 +43,11 @@ const MarketCategories = () => {
         </div>
         <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0">
           {/* Market Grid */}
-          <div className="w-full md:w-1/2 grid grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="w-full md:w-1/2 flex flex-wrap justify-evenly items-center space-y-4 md:space-y-0">
             {markets.map((market, index) => (
               <div
                 key={index}
-                className={`flex flex-col items-center text-center space-y-4 animate-float ${
-                  index === markets.length - 1 ? "col-span-2 row-span-2 justify-center items-center" : ""
-                }`}
+                className={`bg-background w-52 flex flex-col items-center text-center space-y-4 animate-float p-4 rounded-lg`}
               >
                 <img src={market.image} alt={market.title} className="w-24 h-24 object-contain" />
                 <h3 className="text-xl font-semibold text-primary">{market.title}</h3>
