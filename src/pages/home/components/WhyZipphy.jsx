@@ -42,7 +42,7 @@ const WhyZipphy = () => {
           {floatingItems.map((item, index) => (
             <div
               key={index}
-              className={`p-4 w-full lg:w-60 bg-white shadow-lg rounded-md mb-6 lg:mb-0 lg:animate-float ${
+              className={`p-4 w-full lg:w-72 bg-white shadow-lg rounded-md mb-6 lg:mb-0 lg:animate-float ${
                 index === 0 ? "mt-0" : "mt-4 lg:mt-0"
               } ${index === floatingItems.length - 1 ? "mb-0" : "mb-6 lg:mb-0"} 
               lg:absolute`}

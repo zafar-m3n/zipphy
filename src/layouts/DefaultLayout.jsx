@@ -6,16 +6,17 @@ import TickerTape from "@/components/TickerTape";
 
 const DefaultLayout = () => {
   return (
-    <div className="flex flex-col min-h-screen overflow-x-hidden">
+    <div className="flex flex-col min-h-screen">
       <TickerTape />
-      <div className="relative">
-        <div className="sticky top-0 z-50 bg-white shadow-md">
-          <Header />
-        </div>
-      </div>
+
+      <header className="sticky top-0 z-50 bg-white shadow-md">
+        <Header />
+      </header>
+
       <main className="flex-grow">
         <Outlet />
       </main>
+
       <Footer />
     </div>
   );
