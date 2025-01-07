@@ -47,7 +47,7 @@ const MarketCategories = () => {
             {markets.map((market, index) => (
               <div
                 key={index}
-                className={`bg-background w-52 flex flex-col items-center text-center space-y-4 animate-float p-4 rounded-lg`}
+                className={`w-52 flex flex-col items-center text-center space-y-4 animate-float p-4 rounded-lg`}
               >
                 <img src={market.image} alt={market.title} className="w-24 h-24 object-contain" />
                 <h3 className="text-xl font-semibold text-primary">{market.title}</h3>

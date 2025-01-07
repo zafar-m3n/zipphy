@@ -109,7 +109,7 @@ const Deposits = () => {
           </ul>
         </div>
         <div className="lg:w-1/2">
-          <img src="/images/card.jpg" alt="Trading Platform" />
+          <img src="/images/card.png" alt="Trading Platform" />
         </div>
       </div>
     </section>

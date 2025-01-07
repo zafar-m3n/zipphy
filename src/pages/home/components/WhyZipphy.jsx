@@ -51,7 +51,7 @@ const WhyZipphy = () => {
                 animationDelay: `${index * 0.5}s`,
               }}
             >
-              <h3 className="font-bold text-lg text-accent">{item.title}</h3>
+              <h3 className="font-bold text-[16px] text-accent">{item.title}</h3>
               <p className="text-sm text-gray-600">{item.description}</p>
             </div>
           ))}
