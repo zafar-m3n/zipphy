@@ -108,8 +108,8 @@ const Deposits = () => {
             </li>
           </ul>
         </div>
-        <div className="lg:w-1/2">
-          <img src="/images/card.png" alt="Trading Platform" className="w-full" />
+        <div className="lg:w-1/2 flex justify-center items-center">
+          <img src="/images/card.png" alt="Trading Platform" className="w-3/4" />
         </div>
       </div>
     </section>
