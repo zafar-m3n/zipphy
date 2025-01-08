@@ -60,17 +60,17 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/contact" className="hover:text-accent">
+                <a href="/company/about-us" className="hover:text-accent">
                   Contact Us
                 </a>
               </li>
               <li>
-                <a href="/about" className="hover:text-accent">
+                <a href="/company/about-us" className="hover:text-accent">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="/faq" className="hover:text-accent">
+                <a href="/company/faq" className="hover:text-accent">
                   FAQ
                 </a>
               </li>
