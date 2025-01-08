@@ -10,6 +10,7 @@ import Stats from "./components/Stats";
 import Deposits from "./components/Deposits";
 import WhyZipphy from "./components/WhyZipphy";
 import MiniChartRow from "./components/MiniChartRow";
+import AwardsSection from "./components/AwardsSection";
 
 const HomePage = () => {
   useEffect(() => {
@@ -21,6 +22,7 @@ const HomePage = () => {
       <HeroSection />
       <div className="container mx-auto">
         <Welcome />
+        <AwardsSection />
         <TradingPlatforms />
         <MiniChartRow />
         <TradingOpportunities />
